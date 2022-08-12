@@ -1,0 +1,10 @@
+global using Microsoft.AspNetCore.Mvc;
+global using Mago.Mvc.ViewModels;
+global using System.Collections.ObjectModel;
+global using Mago.Mvc.Helpers;
+global using Mago.Mvc.Settings;
+global using Mago.Mvc.Interfaces;
+global using Microsoft.EntityFrameworkCore;
+global using System.Reflection;
+global using Mago.Mvc.Models;
+global using Mago.Mvc.Configurations;

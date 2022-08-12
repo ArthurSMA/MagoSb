@@ -1,0 +1,38 @@
+@{
+    Layout = null;
+    ViewData["Title"] = "Login";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/Login/login.css">
+</head>
+<div class="main-login">
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Voltar</a>
+    </li>
+    <div class="left-login">
+        <h1>Faça Login <br>E entre para nosso time</h1>
+    </div>
+    <form class="right-login" action="Login" method="post">
+        <div class="card-login">
+            <h1>LOGIN</h1>
+
+            <div class="textfield">
+                <label for="usuario">Email</label>
+                <input type="email" name="Email" placeholder="Email">
+            </div>
+            <div class="textfield">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha">
+            </div>
+            <button class="btn-login">Login</button>
+        </div>
+    </form>
+</div>
+<script>
+    login.init({
+        urls: {
+            login: '@Url.Action("Login")',
+        }
+    })
+</script>

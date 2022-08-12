@@ -1,0 +1,73 @@
+@{
+    Layout = "_Layout";
+}
+
+<div class="container-cadastrar">
+    <form id="form-cadastrar" class="form-cadastrar-usuario" action="Cadastrar" method="post">
+        <div class="campos-formulario">
+            <div class="input-cadastrar">
+                <p class="titulo-cadastrar">Junte-se a nós!</p>
+                <div class="campo-nome">
+                    <label>Nome</label>
+                    <input class="uk-form-small" type="text" id="nome">
+                </div>
+                <div class="campo-email">
+                    <label>E-mail</label>
+                    <input class="uk-form-small" type="email" id="email">
+                </div>
+                <div class="campo-senha">
+                    <label>Senha</label>
+                    <input class="uk-form-small" type="password" id="senha">
+                </div>
+                <div class="container-cadastrar-endereco">
+                    <div class="campo-">
+                        <label>Estado</label>
+                        <input class="uk-form-small" type="text" id="estado">
+                    </div>
+                    <div class="campo-">
+                        <label>Sigla</label>
+                        <input class="uk-form-small" type="text" id="sigla">
+                    </div>
+                    <div class="campo-">
+                        <label>Cidade</label>
+                        <input class="uk-form-small" type="text" id="cidade">
+                    </div>
+                    <div class="campo-">
+                        <label>Rua</label>
+                        <input class="uk-form-small" type="text" id="rua">
+                    </div>
+                    <div class="campo-">
+                        <label>Bairro</label>
+                        <input class="uk-form-small" type="text" id="bairro">
+                    </div>
+                    <div class="campo-">
+                        <label>Numero</label>
+                        <input class="uk-form-small" type="text" id="numero">
+                    </div>
+                    <div class="campo-">
+                        <label>Rua</label>
+                        <input class="uk-form-small" type="text" id="rua">
+                    </div>
+                    <div class="campo-">
+                        <label>Bairro</label>
+                        <input class="uk-form-small" type="text" id="bairro">
+                    </div>
+                    <div class="campo-">
+                        <label>Numero</label>
+                        <input class="uk-form-small" type="text" id="numero">
+                    </div>
+                    <div class="campo-">
+                        <label>Cep</label>
+                        <input class="uk-form-small" type="text" id="cep">
+                    </div>
+                    <div class="campo-">
+                        <label>Complemento</label>
+                        <input class="uk-form-small" type="text" id="complemento">
+                    </div>
+                </div>
+            </div>
+            <div class="botao-cadastrar">
+                <button onsubmit="usuario.cadastrar()">Cadastre-se</button>
+            </div>
+    </form>
+</div>

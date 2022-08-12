@@ -1,0 +1,66 @@
+body {
+    background-color: #201b2c;
+}
+
+p , label, input {
+    color: #f2f2f2;
+}
+
+input {
+    background-color: #514869;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1.5%;
+    text-align: left;
+    width: 15vw;
+}
+
+input:focus {
+    outline: none;
+}
+
+.header {
+    height: 15px;
+    background-color: #00ff88;
+}
+
+.header a{
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.container-buscar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 7vh;
+    background-color: #2f2841;
+}
+
+.container-buscar input {
+    margin-left: 10%;
+    background-color: #514869;
+}
+
+.inputs-login {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.botao {
+    margin: 1% 0 0 0;
+    text-align: center;
+}
+
+.botao button {
+    border: none;
+    width: 15vw;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #000;
+}
+
+button :hover {
+    cursor: pointer;
+}
