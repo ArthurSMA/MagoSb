@@ -1,0 +1,4 @@
+Eu não consegui chegar nem perto de completar o desafio e me envergonho muito disso!
+O desafio me mostrou aonde estão minhas dificuldades e eu tenho muita dificuldade no DbContext 
+que eu só consegui fazer pegando uma cola do krita, nos Repositorys (é aonde eu fico mais perdido) 
+e no Ajax(Eu só fui começar a estudar js por agora)

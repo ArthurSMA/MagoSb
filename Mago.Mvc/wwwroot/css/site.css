@@ -16,3 +16,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+p {
+  color: white;
+}
+
+img {
+  max-width: 295px;
+  max-height: 303px;
+}

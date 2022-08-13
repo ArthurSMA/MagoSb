@@ -23,7 +23,7 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index">Minha
+                            <a asp-area="" asp-controller="Login" asp-action="Index">Minha
                                 conta</a>
                         </li>
                     </ul>
@@ -34,21 +34,8 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
-            <div class="container-buscar">
-                <div class="filtros">
-                    <input type="button" name="departamentos" id="departamentos" value ="Departamentos">
-                </div>
-                <div class="buscar">
-                    <input type="search" name="buscar" id="buscar">
-                </div>
-            </div>
         </main>
     </div>
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - Mago.Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

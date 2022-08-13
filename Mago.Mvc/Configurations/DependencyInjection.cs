@@ -14,8 +14,8 @@ namespace Mago.Mvc.Configurations
             services.AddControllersWithViews();
 
             services.AddScoped<Notification>();
-            // services.AddScoped<AppDbContext>();
-            // services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<ApplicationDbContext>();
+            //services.AddScoped<IUsuarioRepository, UsuarioRepository>();
         }
     }
 }

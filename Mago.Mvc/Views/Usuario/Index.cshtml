@@ -1,73 +1,46 @@
 @{
-    Layout = "_Layout";
+    Layout = null;
+    ViewData["Title"] = "Cadastre-se";
 }
 
-<div class="container-cadastrar">
-    <form id="form-cadastrar" class="form-cadastrar-usuario" action="Cadastrar" method="post">
-        <div class="campos-formulario">
-            <div class="input-cadastrar">
-                <p class="titulo-cadastrar">Junte-se a nós!</p>
-                <div class="campo-nome">
-                    <label>Nome</label>
-                    <input class="uk-form-small" type="text" id="nome">
-                </div>
-                <div class="campo-email">
-                    <label>E-mail</label>
-                    <input class="uk-form-small" type="email" id="email">
-                </div>
-                <div class="campo-senha">
-                    <label>Senha</label>
-                    <input class="uk-form-small" type="password" id="senha">
-                </div>
-                <div class="container-cadastrar-endereco">
-                    <div class="campo-">
-                        <label>Estado</label>
-                        <input class="uk-form-small" type="text" id="estado">
-                    </div>
-                    <div class="campo-">
-                        <label>Sigla</label>
-                        <input class="uk-form-small" type="text" id="sigla">
-                    </div>
-                    <div class="campo-">
-                        <label>Cidade</label>
-                        <input class="uk-form-small" type="text" id="cidade">
-                    </div>
-                    <div class="campo-">
-                        <label>Rua</label>
-                        <input class="uk-form-small" type="text" id="rua">
-                    </div>
-                    <div class="campo-">
-                        <label>Bairro</label>
-                        <input class="uk-form-small" type="text" id="bairro">
-                    </div>
-                    <div class="campo-">
-                        <label>Numero</label>
-                        <input class="uk-form-small" type="text" id="numero">
-                    </div>
-                    <div class="campo-">
-                        <label>Rua</label>
-                        <input class="uk-form-small" type="text" id="rua">
-                    </div>
-                    <div class="campo-">
-                        <label>Bairro</label>
-                        <input class="uk-form-small" type="text" id="bairro">
-                    </div>
-                    <div class="campo-">
-                        <label>Numero</label>
-                        <input class="uk-form-small" type="text" id="numero">
-                    </div>
-                    <div class="campo-">
-                        <label>Cep</label>
-                        <input class="uk-form-small" type="text" id="cep">
-                    </div>
-                    <div class="campo-">
-                        <label>Complemento</label>
-                        <input class="uk-form-small" type="text" id="complemento">
-                    </div>
-                </div>
+<head>
+    <link rel="stylesheet" href="~/css/Usuario/usuario.css">
+</head>
+<div class="main-cadastrar">
+    <div class="arrow-voltar">
+        <a class="voltar" uk-icon="icon: arrow-left; ratio: 4" asp-area="" asp-controller="Home" asp-action="Index"></a>
+    </div>
+    <form class="right-cadastrar" action="cadastrar" method="post">
+        <div class="card-cadastrar">
+            <h1>Trone-se um membro</h1>
+            <div class="textfield">
+                <label for="usuario">Nome</label>
+                <input type="text" name="Nome" placeholder="Nome">
             </div>
-            <div class="botao-cadastrar">
-                <button onsubmit="usuario.cadastrar()">Cadastre-se</button>
+            <div class="textfield">
+                <label for="usuario">Email</label>
+                <input type="email" name="Email" placeholder="Email">
             </div>
+            <div class="textfield">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha">
+            </div>
+            <button class="btn-cadastrar">Cadastrar</button>
+        </div>
     </form>
+    <div class="left-cadastrar">
+        <p>Já é um membro?</p>
+        <a asp-controller="Login" asp-action="Index">Fazer login</a>
+    </div>
 </div>
+    
+<script>
+    login.init({
+        urls: {
+            cadastrar: '@Url.Action("Cadastrar")',
+        }
+    })
+</script>
+<script src="~/lib/uikit/js/uikit.min.js"></script>
+<script src="~/lib/uikit/js/uikit-icons.min.js"></script>
+<script src="~/lib/iziToast/js/iziToast.min.js"></script>

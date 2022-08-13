@@ -1771,19 +1771,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ARTHUR\\.nuget\\packages\\": {}
+    "C:\\Users\\nerdy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ARTHUR\\Desktop\\MagoSB\\Mago.Mvc\\Mago.Mvc.csproj",
+      "projectUniqueName": "C:\\Users\\nerdy\\Desktop\\MagoSb\\Mago.Mvc\\Mago.Mvc.csproj",
       "projectName": "Mago.Mvc",
-      "projectPath": "C:\\Users\\ARTHUR\\Desktop\\MagoSB\\Mago.Mvc\\Mago.Mvc.csproj",
-      "packagesPath": "C:\\Users\\ARTHUR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ARTHUR\\Desktop\\MagoSB\\Mago.Mvc\\obj\\",
+      "projectPath": "C:\\Users\\nerdy\\Desktop\\MagoSb\\Mago.Mvc\\Mago.Mvc.csproj",
+      "packagesPath": "C:\\Users\\nerdy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nerdy\\Desktop\\MagoSb\\Mago.Mvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ARTHUR\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\nerdy\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1834,7 +1834,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

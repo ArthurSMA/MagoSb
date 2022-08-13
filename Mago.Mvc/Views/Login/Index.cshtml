@@ -7,16 +7,12 @@
     <link rel="stylesheet" href="~/css/Login/login.css">
 </head>
 <div class="main-login">
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Voltar</a>
-    </li>
-    <div class="left-login">
-        <h1>Faça Login <br>E entre para nosso time</h1>
+    <div class="arrow-voltar">
+        <a uk-icon="icon: arrow-left; ratio: 4" asp-area="" asp-controller="Home" asp-action="Index"></a>
     </div>
     <form class="right-login" action="Login" method="post">
         <div class="card-login">
             <h1>LOGIN</h1>
-
             <div class="textfield">
                 <label for="usuario">Email</label>
                 <input type="email" name="Email" placeholder="Email">
@@ -28,7 +24,12 @@
             <button class="btn-login">Login</button>
         </div>
     </form>
+    <div class="left-login">
+        <p>Ainda não possui login?</p>
+        <a asp-controller="Usuario" asp-action="Index">Cadastre-se</a>
+    </div>
 </div>
+    
 <script>
     login.init({
         urls: {
@@ -36,3 +37,6 @@
         }
     })
 </script>
+<script src="~/lib/uikit/js/uikit.min.js"></script>
+<script src="~/lib/uikit/js/uikit-icons.min.js"></script>
+<script src="~/lib/iziToast/js/iziToast.min.js"></script>

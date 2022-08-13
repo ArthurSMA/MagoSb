@@ -3,10 +3,30 @@
 body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
+    background: #201b2c;
 }
 
 body * {
     box-sizing: border-box;
+}
+
+a:link {
+    color: #00ff88;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00ff88;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #00ff00;
+    text-decoration: underline;
 }
 
 .main-login {
@@ -14,8 +34,18 @@ body * {
     height: 100vh;
     background: #201b2c;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.arrow-voltar {
+    width: 50vw;
+    height: 0vh;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color: white;
 }
 
 .left-login {
@@ -27,8 +57,8 @@ body * {
     flex-direction: column;
 }
 
-.left-login>h1 {
-    font-size: 3vw;
+.left-login>p {
+    font-size: 1.5vw;
     color: #77ffc0;
 }
 
@@ -42,6 +72,7 @@ body * {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 }
 
 .card-login {
